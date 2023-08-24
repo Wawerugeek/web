@@ -5,6 +5,7 @@ import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -37,13 +38,17 @@ export default function Skills() {
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
-            whileInView="animate"
+            whileInView= "animate"
+            whileHover={{ scale: [1, 0.90], background: "lightblue"}}
+            transition={ { duration: 0.25}}
             viewport={{
               once: true,
             }}
             custom={index}
           >
-            {skill}
+            <Link legacyBehavior href={skill.link}>
+              <a className="hover:text-blue-500">{skill.name}</a>
+            </Link>
           </motion.li>
         ))}
       </ul>

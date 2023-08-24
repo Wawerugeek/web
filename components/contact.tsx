@@ -33,8 +33,8 @@ export default function Contact() {
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
+        <a className="underline" href="stevemuiruri84@gmail.com">
+          stevemuiruri84@gmail.com
         </a>{" "}
         or through this form.
       </p>
@@ -49,7 +49,7 @@ export default function Contact() {
             return;
           }
 
-          toast.success("Email sent successfully!");
+          toast.success("Email sent successfully! will get back to you ASAP!");
         }}
       >
         <input

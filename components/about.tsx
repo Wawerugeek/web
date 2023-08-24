@@ -19,31 +19,23 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
+  I am an accomplished Full-Stack Software Developer with a fervent passion for software development.
+  My skill set encompasses both backend and frontend technologies, along with proficiency in database management, UI/UX design, and DevOps practices.
+  With a robust ability to craft robust web applications, optimize performance, and deliver exceptional user experiences,
+  I bring a strong expertise in containerization, API development, and cloud technologies to the table.
+  My goal is to leverage my expertise within a dynamic and innovative team environment, contributing to the creation of cutting-edge solutions.
+</p>
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
-      </p>
+<p className="mb-3">
+  In my professional journey, I've excelled as a Freelancer Developer, contributing to the development and maintenance of web applications using React, Express, and Node.js.
+  I've demonstrated my capability to create responsive UI designs for optimal user experiences using Tailwind CSS.
+  With a track record of integrating front-end and back-end services, optimizing database structures, and implementing DevOps practices, including Docker containerization and CI/CD pipelines,
+  I've ensured streamlined development and deployment.
+</p>
+
+<p>
+  I am currently pursuing Software Engineering at Alx-Africa and hold a Bachelor of Science in Applied Physics and Computer Science from Multimedia University of Kenya.
+</p>
     </motion.section>
   );
 }
