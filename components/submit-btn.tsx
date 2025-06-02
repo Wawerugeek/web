@@ -1,24 +1,19 @@
-import React from "react";
-import { FaPaperPlane } from "react-icons/fa";
-import { experimental_useFormStatus as useFormStatus } from "react-dom";
+"use client";
 
-export default function SubmitBtn() {
-  const { pending } = useFormStatus();
+import { ButtonHTMLAttributes, ReactNode } from "react";
 
+interface SubmitBtnProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  children: ReactNode;
+}
+
+export default function SubmitBtn({ children, className = "", ...props }: SubmitBtnProps) {
   return (
     <button
       type="submit"
-      className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
-      disabled={pending}
+      {...props}
+      className={`bg-gradient-to-r from-purple-500 to-blue-500 text-white py-2 px-4 rounded-lg hover:opacity-90 transition-all ${className}`}
     >
-      {pending ? (
-        <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
-      ) : (
-        <>
-          Submit{" "}
-          <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
-        </>
-      )}
+      {children}
     </button>
   );
 }

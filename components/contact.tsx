@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { ReactNode } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
@@ -9,6 +10,13 @@ import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 import { FaPaperPlane, FaLinkedin, FaGithub, FaTwitter, FaPhone, FaEnvelope } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
+
+
+
+interface SubmitBtnProps {
+  children: ReactNode;
+}
+
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -68,7 +76,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-medium text-white">Phone</p>
-                  <p className="text-sm text-white/70">+254 712 345 678</p>
+                  <p className="text-sm text-white/70">+254 701 313 327 </p>
                 </div>
               </a>
             </div>
